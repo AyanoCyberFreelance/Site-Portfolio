@@ -1,0 +1,71 @@
+// main: ../style.less
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.articles_col {
+  width: 33.33333%;
+  padding: 0 1rem;
+
+  @media @mobile {
+    width: 100%;
+  }
+}
+
+.articles_item {
+  margin-bottom: 2.5rem;
+
+  @media @mobile {
+    max-width: 370px;
+    margin: 0 auto 2rem;
+  }
+}
+
+.articles_header {
+  position: relative;
+  margin-bottom: 1.35rem;
+}
+
+.articles_date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 77px;
+  height: 77px;
+  background-color: @black;
+  color: @white;
+  font-size: 16px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.articles_photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.articles_title {
+  font-size: 1.2rem;
+  color: @black;
+  margin-bottom: 0.5rem;
+}
+
+.articles_cat {
+  font-size: 0.9rem;
+  color: #000;
+  margin-bottom: 1.4rem;
+}
+
+.articles_text {
+  color: @gray;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
